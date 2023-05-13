@@ -1,4 +1,4 @@
-const quoteContainer = document.getElementById("quote-generator");
+const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
@@ -52,7 +52,7 @@ async function getQuotes() {
     newQuote();
   } catch (error) {
     //  Catch Error Here
-    console.log("Oops! Something went wrong!");
+    console.log("Oops! Something went wrong!", error);
   }
 }
 
